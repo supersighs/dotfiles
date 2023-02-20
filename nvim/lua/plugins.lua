@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
   use 'sainnhe/gruvbox-material'
   use 'RRethy/nvim-base16'
   use 'nanozuki/tabby.nvim'
+  use 'sbdchd/neoformat'
   use {
 	  'nvim-telescope/telescope.nvim',
 	  tag = '0.1.1',
@@ -26,6 +27,17 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',                     -- statusline
     requires = {'kyazdani42/nvim-web-devicons',
                 opt = true}
+  }
+  use {
+    'ms-jpq/coq_nvim',
+    branch = 'coq',
+    requires = {
+	{'ms-jpq/coq.artifacts', branch = 'artifacts'},
+	{'ms-jpq/coq.thirdparty', branch = '3p'}
+    }
+  }
+  use {
+    'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps'
   }
 end)
 
