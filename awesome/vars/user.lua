@@ -22,6 +22,6 @@ user_vars = {
         awful.layout.suit.spiral.dwindle,
     },
     terminal = "alacritty",
-    editor = "nvim"
+    editor = "nvim",
     modkey = "Mod4"
 }
