@@ -21,4 +21,7 @@ user_vars = {
         awful.layout.suit.max.fullscreen,
         awful.layout.suit.spiral.dwindle,
     },
+    terminal = "alacritty",
+    editor = "nvim"
+    modkey = "Mod4"
 }
