@@ -31,6 +31,8 @@ theme.border_normal = "#000000"
 theme.border_focus  = "#8a6eff"
 theme.border_marked = "#194D33"
 
+theme.tasklist_disable_icon = true
+
 -- There are other variable sets
 -- overriding the default one when
 -- defined, the sets are:
@@ -46,11 +48,12 @@ theme.border_marked = "#194D33"
 
 -- Generate taglist squares:
 local taglist_square_size = dpi(4)
+local taglist_unsel_square_size = dpi(4)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
     taglist_square_size, theme.fg_normal
 )
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
-    taglist_square_size, theme.fg_normal
+    taglist_unsel_square_size, theme.fg_normal
 )
 
 -- Variables set for theming notifications:

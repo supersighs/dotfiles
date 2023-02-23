@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
 	  tag = '0.1.1',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   use {                                              -- filesystem navigation
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons'        -- filesystem icons
