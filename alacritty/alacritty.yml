@@ -8,7 +8,8 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-#import:
+import:
+  - ~/.config/alacritty/themes/themes/afterglow.yaml
 #  - /path/to/alacritty.yml
 
 # Any items in the `env` entry below will be added as
@@ -331,7 +332,7 @@ colors:
   # Whether or not `window.opacity` applies to all cell backgrounds or only to
   # the default background. When set to `true` all cells will be transparent
   # regardless of their background color.
-  #transparent_background_colors: false
+  transparent_background_colors: true
 
 # Bell
 #

@@ -9,7 +9,7 @@ opt.syntax = "ON"                -- str:  Allow syntax highlighting
 opt.termguicolors = true         -- bool: If term supports ui color then enable
 opt.number = true
 cmd('colorscheme carbonfox')       -- cmd:  Set the colorscheme
-
+cmd('highlight Normal guibg=0')
 -- Tab control
 opt.expandtab = true
 opt.smarttab = true -- tab respects 'tabstop', 'shiftwidth', and 'softtabstop'

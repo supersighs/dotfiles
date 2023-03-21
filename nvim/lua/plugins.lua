@@ -28,16 +28,10 @@ return require('packer').startup(function(use)
     requires = {'kyazdani42/nvim-web-devicons',
                 opt = true}
   }
-  use {
-    'ms-jpq/coq_nvim',
-    branch = 'coq',
-    requires = {
-	{'ms-jpq/coq.artifacts', branch = 'artifacts'},
-	{'ms-jpq/coq.thirdparty', branch = '3p'}
-    }
-  }
-  use {
-    'ms-jpq/chadtree', branch = 'chad', run = 'python3 -m chadtree deps'
-  }
+
+  use {'hrsh7th/nvim-cmp'}
+  use {'hrsh7th/cmp-vsnip'}
+  use {'hrsh7th/cmp-nvim-lsp'}
+  use {'hrsh7th/cmp-buffer'}
 end)
 
