@@ -1,0 +1,73 @@
+# Sensitive Files
+# ====================
+# SSH private keys
+ssh/id_*
+ssh/*.pem
+ssh/*.key
+ssh/known_hosts
+ssh/authorized_keys
+
+# API keys and secrets
+**/*secret*
+**/*key*.json
+**/*credentials*
+**/*token*
+**/auth-token
+**/.env
+**/.env.*
+!**/.env.example
+
+# Git config with potential sensitive info
+git/.gitconfig.local
+
+# Fish shell history (may contain sensitive commands)
+config/fish/fish_history
+config/fish/fishd.*
+
+# Shell history
+**/*_history
+
+# Cache and temporary files
+# ====================
+**/.DS_Store
+**/.cache/
+**/cache/
+**/*.log
+**/*.swp
+**/*.swo
+**/*~
+**/._*
+
+# Config-specific ignores
+# ====================
+# Neovim
+config/nvim/.netrwhist
+config/nvim/plugin/packer_compiled.lua
+config/nvim/lazy-lock.json
+config/nvim/undo/
+config/nvim/swap/
+config/nvim/backup/
+
+# Fish
+config/fish/conf.d/
+config/fish/completions/
+config/fish/functions/fisher.fish
+
+# GitHub CLI
+config/gh/hosts.yml
+
+# Karabiner (complex modifications can be large)
+config/karabiner/automatic_backups/
+
+# btop
+config/btop/btop.log
+
+# System and Application specific
+# ====================
+.CFUserTextEncoding
+.localized
+
+# Backup directories
+*_backup_*/
+*.backup
+config/kitty/kitty-themes
