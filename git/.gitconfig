@@ -1,0 +1,18 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Tomas Klumker
+	email = rebased@tomask.dev
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILB7V5/mfL6dHrpeVelQB9ONyFdqdKl8WgWG9daQSdiq
+[push]
+	autoSetupRemote = true
+[core]
+	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
